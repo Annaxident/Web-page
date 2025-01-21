@@ -1,0 +1,145 @@
+/* general reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body styling */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #add8e6;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* header */
+header{
+    display: flex;
+    padding: 20px 10%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 25px;
+    color: #333;
+}
+
+header h1 img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    margin-right: 20px;
+}
+
+.nav-buttons a {
+    text-decoration: none;
+    color: #333;
+    border: 2px solid #333;
+    padding: 8px 16px;
+    border-radius: 4px;
+    margin-left: 10px;
+    transition: all 0.3s ease;
+}
+
+.nav-buttons a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* hero section */
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 10%;
+    text-align: left;
+    min-height: 50vh;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.hero h2 {
+    font-size: 70px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hero h2 span {
+    display: block;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #555;
+    max-width: 50%;
+    align-self: flex-end;
+    text-align: right;
+}
+/* projects section */
+
+.Projects {
+    padding: 40px 10%;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.Projects h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.Projects .Project {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.Projects .Project:hover {
+    transform: translateY(-5px);
+}
+
+.Projects .Project h3 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #333;
+}
+
+.Projects .Project p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+.Projects .Project a:hover {
+    text-decoration: underline;
+}
+
+/* responsive */
+
+@media (max-wigth: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero h2 {
+        font-size: 36px;
+    }
+    .hero p {
+        font-size: 16px;
+        max-width: 100%;
+        text-align: left;
+        align-self: flex-start;
+    }
+}
+
