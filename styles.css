@@ -85,7 +85,10 @@ header h1 img {
 
 .projects {
     padding: 40px 10%;
-    background-color: #ffffff; 
+    background: rgba(255, 255, 255, 0.8); /* Stesso sfondo semitrasparente */
+    backdrop-filter: blur(5px); /* Effetto sfocatura per armonia con l'immagine */
+    border-radius: 8px; /* Bordo arrotondato per un look simile */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombra per profondità */
 }
 
 .projects h2 {
@@ -120,16 +123,20 @@ header h1 img {
     color: #555;
 }
 
-.projects .project a:hover {
-    text-decoration: underline;
-}
-
 /* Griglia generale per interessi */
 .interests-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
     justify-items: center; /* Allinea le card al centro */
+}
+
+.interests {
+    padding: 40px 10%;
+    background: rgba(255, 255, 255, 0.8); /* Stesso sfondo semitrasparente */
+    backdrop-filter: blur(5px); /* Effetto sfocatura per armonia con l'immagine */
+    border-radius: 8px; /* Bordo arrotondato per un look simile */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombra per profondità */
 }
 
 /* Interesse - Singola card */
